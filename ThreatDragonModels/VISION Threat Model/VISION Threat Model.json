@@ -192,40 +192,6 @@
           },
           {
             "position": {
-              "x": 369.9999999999998,
-              "y": 261
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "id": "d11cf1b2-7785-4692-aa70-a745ed944e20",
-            "zIndex": 4,
-            "data": {
-              "type": "tm.Process",
-              "name": "Process",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
               "x": 820,
               "y": 150
             },
@@ -267,8 +233,8 @@
           },
           {
             "position": {
-              "x": 507,
-              "y": 211
+              "x": 427,
+              "y": 210
             },
             "size": {
               "width": 140,
@@ -414,6 +380,45 @@
             },
             "target": {
               "cell": "8f9cc959-5f57-490a-af72-a4f57a49357b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "ebc3f51d-2040-4bad-8636-1d8e813a2ca1",
+            "source": {
+              "cell": "2792fe82-fa08-40c1-916a-50030c0106bc"
+            },
+            "target": {
+              "cell": "302d3b6f-1977-4c00-a545-7763b3a48fdb"
             }
           }
         ],
