@@ -233,8 +233,8 @@
           },
           {
             "position": {
-              "x": 427,
-              "y": 210
+              "x": 507,
+              "y": 261
             },
             "size": {
               "width": 140,
@@ -369,17 +369,17 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": true,
-              "isEncrypted": true,
+              "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
-            "id": "12bb0aec-5400-4d3d-84d9-047251bb0bc0",
+            "id": "ebc3f51d-2040-4bad-8636-1d8e813a2ca1",
             "source": {
-              "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
+              "cell": "2792fe82-fa08-40c1-916a-50030c0106bc"
             },
             "target": {
-              "cell": "8f9cc959-5f57-490a-af72-a4f57a49357b"
+              "cell": "302d3b6f-1977-4c00-a545-7763b3a48fdb"
             }
           },
           {
@@ -402,23 +402,105 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Annotated and Processed Data",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": true,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
             },
-            "id": "ebc3f51d-2040-4bad-8636-1d8e813a2ca1",
+            "id": "2b55beff-d539-4368-8c36-d2551cef4829",
             "source": {
-              "cell": "2792fe82-fa08-40c1-916a-50030c0106bc"
+              "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
             },
             "target": {
-              "cell": "302d3b6f-1977-4c00-a545-7763b3a48fdb"
+              "cell": "8f9cc959-5f57-490a-af72-a4f57a49357b"
+            },
+            "labels": [
+              "Annotated and Processed Data"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Raw and Annotated Data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "433d160e-68d9-4cb2-8491-21a410e805ca",
+            "source": {
+              "cell": "8d8dad36-dfb3-4a5c-86b4-aa798208c4a1"
+            },
+            "target": {
+              "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
+            },
+            "labels": [
+              "Raw and Annotated Data"
+            ]
+          },
+          {
+            "position": {
+              "x": 334.9999999999998,
+              "y": 261
+            },
+            "size": {
+              "width": 150,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Data Ingestion \nInterface"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "a7eae6c7-0b70-4d7e-9c31-0784ddbb995b",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Data Ingestion \nInterface",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
           }
         ],
