@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 320,
-              "y": 50
+              "x": 319.9999999999998,
+              "y": 31
             },
             "size": {
               "width": 680,
-              "height": 400
+              "height": 570
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -65,11 +65,11 @@
           {
             "position": {
               "x": 1080,
-              "y": 266.0000000000001
+              "y": 451
             },
             "size": {
               "width": 190,
-              "height": 140
+              "height": 150
             },
             "shape": "trust-boundary-box",
             "id": "542794bb-e9c2-46ba-9cba-52793bbd6159",
@@ -77,6 +77,56 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 348.9999999999993,
+              "y": 60.000000000001705
+            },
+            "size": {
+              "width": 620,
+              "height": 160
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Client Access"
+              }
+            },
+            "id": "b36b37f4-b450-4201-a382-98f833910d5b",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Client Access",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 339,
+              "y": 251.00000000000188
+            },
+            "size": {
+              "width": 630,
+              "height": 340
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Employee Access"
+              }
+            },
+            "id": "0c81a842-b48f-40a4-87ed-002cf2d83d1e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Employee Access",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -118,7 +168,7 @@
           },
           {
             "position": {
-              "x": 349.9999999999998,
+              "x": 399.9999999999998,
               "y": 80
             },
             "size": {
@@ -130,8 +180,8 @@
                 "text": "Authorization/\nAuthentication"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -145,18 +195,40 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2d50ba9d-68e9-4b89-a7d1-9edc6337f63c",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Users may be susceptible to privilege elevation during the authentication process. This could put the client’ (Sensitive) Personally Identifiable Information unprotected from unauthorized access.",
+                  "mitigation": "Principle of Least Privilege.\nPassword policies.\nCarefully manage privileged accounts.\nReviewing and auditing.\nTemporary credentials.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 2
+              }
             }
           },
           {
             "position": {
-              "x": 820,
-              "y": 150
+              "x": 399.9999999999998,
+              "y": 314
             },
             "size": {
               "width": 120,
@@ -196,8 +268,8 @@
           },
           {
             "position": {
-              "x": 507,
-              "y": 261
+              "x": 779.9999999999998,
+              "y": 289
             },
             "size": {
               "width": 140,
@@ -234,7 +306,7 @@
           {
             "position": {
               "x": 1090,
-              "y": 294
+              "y": 481
             },
             "size": {
               "width": 170,
@@ -267,8 +339,8 @@
           },
           {
             "position": {
-              "x": 820,
-              "y": 294
+              "x": 563.9999999999993,
+              "y": 515
             },
             "size": {
               "width": 120,
@@ -785,8 +857,8 @@
           },
           {
             "position": {
-              "x": 334.9999999999998,
-              "y": 261
+              "x": 794.9999999999998,
+              "y": 80
             },
             "size": {
               "width": 150,
@@ -857,7 +929,7 @@
           {
             "position": {
               "x": -210,
-              "y": 310
+              "y": 314
             },
             "size": {
               "width": 100,
@@ -868,8 +940,8 @@
                 "text": "Authorization/\nAuthentication"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -883,12 +955,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "7d837883-6e86-487b-b450-503970682c76",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Users may be susceptible to privilege elevation during the authentication process. This could put the client’ (Sensitive) Personally Identifiable Information unprotected from unauthorized access.",
+                  "mitigation": "Principle of Least Privilege.\nPassword policies.\nCarefully manage privileged accounts.\nReviewing and auditing.\nTemporary credentials.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 2
+              }
             }
           },
           {
@@ -905,8 +999,8 @@
                 "text": "User\nInterface"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -920,12 +1014,60 @@
               "description": "Patient App/Portal",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a78abe57-bf83-43b1-b16f-6b2e78eb9f21",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "If SPII is disclosed through this process this could be detrimental to the customers, the data and the reputation of SpendSmart. An API endpoint might inadvertently exposes sensitive user data.",
+                  "mitigation": "Create custom error messages that reveal minimal information about the tech infrastructure. \nLog errors securely to aid in troubleshooting without compromising security.\nAPI security.\nPrinciple of Least Privilege.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "7"
+                },
+                {
+                  "id": "bb06cc3c-12c2-48b7-a86b-80d156577537",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Imitating a valid admin user could make SPII available to unauthorized individuals. An attacker uses stolen API keys to access restricted endpoints.",
+                  "mitigation": "Session timeouts.\nPacket filtering.\nHTTPS or SSH connections.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": "6"
+                },
+                {
+                  "id": "4f853e8c-60f9-4ae5-a24f-6d9a4ccbe5ab",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "An attacker could perform packet flooding to overload the server and make the user interface unavailable a potentially impact healthcare operations.",
+                  "mitigation": "Create redundant services.\nLoad balancing.\nContent Delivery Networks (CDNs).\nRate limiting.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1012,6 +1154,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 5
   }
 }
