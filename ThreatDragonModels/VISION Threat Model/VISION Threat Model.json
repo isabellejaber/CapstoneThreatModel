@@ -32,8 +32,8 @@
                 "text": "VISION"
               }
             },
-            "id": "aec48143-85ce-48be-a94a-8897366d763f",
             "zIndex": -1,
+            "id": "aec48143-85ce-48be-a94a-8897366d763f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "VISION",
@@ -52,8 +52,8 @@
               "height": 370
             },
             "shape": "trust-boundary-box",
-            "id": "e1c3ab6b-41a4-4be6-a683-afc10264c1fa",
             "zIndex": -1,
+            "id": "e1c3ab6b-41a4-4be6-a683-afc10264c1fa",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -72,8 +72,8 @@
               "height": 150
             },
             "shape": "trust-boundary-box",
-            "id": "542794bb-e9c2-46ba-9cba-52793bbd6159",
             "zIndex": -1,
+            "id": "542794bb-e9c2-46ba-9cba-52793bbd6159",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -97,8 +97,8 @@
                 "text": "Client Access"
               }
             },
-            "id": "b36b37f4-b450-4201-a382-98f833910d5b",
             "zIndex": -1,
+            "id": "b36b37f4-b450-4201-a382-98f833910d5b",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Client Access",
@@ -122,8 +122,8 @@
                 "text": "Employee Access"
               }
             },
-            "id": "0c81a842-b48f-40a4-87ed-002cf2d83d1e",
             "zIndex": -1,
+            "id": "0c81a842-b48f-40a4-87ed-002cf2d83d1e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Employee Access",
@@ -153,8 +153,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "2792fe82-fa08-40c1-916a-50030c0106bc",
             "zIndex": 1,
+            "id": "2792fe82-fa08-40c1-916a-50030c0106bc",
             "data": {
               "type": "tm.Actor",
               "name": "Client",
@@ -187,8 +187,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "302d3b6f-1977-4c00-a545-7763b3a48fdb",
             "zIndex": 2,
+            "id": "302d3b6f-1977-4c00-a545-7763b3a48fdb",
             "data": {
               "type": "tm.Process",
               "name": "Authorization/\nAuthentication",
@@ -249,8 +249,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "8f9cc959-5f57-490a-af72-a4f57a49357b",
             "zIndex": 5,
+            "id": "8f9cc959-5f57-490a-af72-a4f57a49357b",
             "data": {
               "type": "tm.Store",
               "name": "Model Library",
@@ -287,8 +287,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "8d8dad36-dfb3-4a5c-86b4-aa798208c4a1",
             "zIndex": 6,
+            "id": "8d8dad36-dfb3-4a5c-86b4-aa798208c4a1",
             "data": {
               "type": "tm.Process",
               "name": "Data Annotation\nand Labeling",
@@ -324,8 +324,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "3d341c4e-33d9-47e6-a2c6-c848318955cf",
             "zIndex": 7,
+            "id": "3d341c4e-33d9-47e6-a2c6-c848318955cf",
             "data": {
               "type": "tm.Actor",
               "name": "External Party\n(i.e. insurance company, \nmedical facility)",
@@ -361,8 +361,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "31164b36-f0fa-4464-a119-154452fa19bc",
             "zIndex": 8,
+            "id": "31164b36-f0fa-4464-a119-154452fa19bc",
             "data": {
               "type": "tm.Store",
               "name": "Data Store",
@@ -415,7 +415,13 @@
             },
             "target": {
               "cell": "302d3b6f-1977-4c00-a545-7763b3a48fdb"
-            }
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 135
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -449,15 +455,15 @@
               "threats": []
             },
             "id": "2b55beff-d539-4368-8c36-d2551cef4829",
+            "labels": [
+              "Annotated and Processed Data"
+            ],
             "source": {
               "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
             },
             "target": {
               "cell": "8f9cc959-5f57-490a-af72-a4f57a49357b"
-            },
-            "labels": [
-              "Annotated and Processed Data"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -491,15 +497,15 @@
               "threats": []
             },
             "id": "433d160e-68d9-4cb2-8491-21a410e805ca",
+            "labels": [
+              "Raw and Annotated Data"
+            ],
             "source": {
               "cell": "8d8dad36-dfb3-4a5c-86b4-aa798208c4a1"
             },
             "target": {
               "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
-            },
-            "labels": [
-              "Raw and Annotated Data"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -689,15 +695,15 @@
               "threats": []
             },
             "id": "49a89e73-bf6c-432a-a735-f01221f6c646",
+            "labels": [
+              "Results from CV model"
+            ],
             "source": {
               "cell": "2f504bcd-4fac-4282-86b2-a3c21e06a118"
             },
             "target": {
               "cell": "1e13197d-c0f2-4c39-9f7f-73c5d3adba48"
-            },
-            "labels": [
-              "Results from CV model"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -876,8 +882,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "a7eae6c7-0b70-4d7e-9c31-0784ddbb995b",
             "zIndex": 11,
+            "id": "a7eae6c7-0b70-4d7e-9c31-0784ddbb995b",
             "data": {
               "type": "tm.Process",
               "name": "Data Ingestion \nInterface",
@@ -913,8 +919,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "54ba7df5-68d7-48af-9965-5d8706018f57",
             "zIndex": 12,
+            "id": "54ba7df5-68d7-48af-9965-5d8706018f57",
             "data": {
               "type": "tm.Actor",
               "name": "Patient",
@@ -947,8 +953,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "e9fd9e14-a2b2-4eec-9dbe-8171603c3ad6",
             "zIndex": 13,
+            "id": "e9fd9e14-a2b2-4eec-9dbe-8171603c3ad6",
             "data": {
               "type": "tm.Process",
               "name": "Authorization/\nAuthentication",
@@ -1006,8 +1012,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "bd9c9324-db06-459a-8ce2-2671a370b16e",
             "zIndex": 14,
+            "id": "bd9c9324-db06-459a-8ce2-2671a370b16e",
             "data": {
               "type": "tm.Process",
               "name": "User\nInterface",
@@ -1094,8 +1100,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "1e13197d-c0f2-4c39-9f7f-73c5d3adba48",
             "zIndex": 15,
+            "id": "1e13197d-c0f2-4c39-9f7f-73c5d3adba48",
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -1132,8 +1138,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "2f504bcd-4fac-4282-86b2-a3c21e06a118",
             "zIndex": 16,
+            "id": "2f504bcd-4fac-4282-86b2-a3c21e06a118",
             "data": {
               "type": "tm.Process",
               "name": "Review",
