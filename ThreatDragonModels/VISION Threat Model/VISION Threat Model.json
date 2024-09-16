@@ -152,8 +152,8 @@
                 "text": "VISION Cloud Storage"
               }
             },
-            "id": "1ce304fb-eb83-4d01-b62a-e7624217a23d",
             "zIndex": -1,
+            "id": "1ce304fb-eb83-4d01-b62a-e7624217a23d",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "VISION Cloud Storage",
@@ -177,8 +177,8 @@
                 "text": "Client Cloud Infrastructure"
               }
             },
-            "id": "88b22692-94af-4bff-83a1-26a62cc0d6f4",
             "zIndex": -1,
+            "id": "88b22692-94af-4bff-83a1-26a62cc0d6f4",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Client Cloud Infrastructure",
@@ -941,7 +941,7 @@
               "protocol": "",
               "threats": []
             },
-            "id": "0ccd2fb9-32c2-49da-901e-81469e250806",
+            "id": "f2d4e8d5-99d7-4a3a-b641-5797c9657537",
             "source": {
               "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
             },
@@ -1288,8 +1288,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "212be703-af40-4e68-a2ee-f434841706cb",
             "zIndex": 17,
+            "id": "212be703-af40-4e68-a2ee-f434841706cb",
             "data": {
               "type": "tm.Actor",
               "name": "Medical Imaging \nTechnology",
