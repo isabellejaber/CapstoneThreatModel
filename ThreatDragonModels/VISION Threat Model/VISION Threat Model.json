@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 319.9999999999998,
-              "y": 31
+              "x": 319.9999999999993,
+              "y": 31.00000000000051
             },
             "size": {
               "width": 680,
-              "height": 570
+              "height": 450
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -44,19 +44,24 @@
           },
           {
             "position": {
-              "x": -339.0000000000013,
-              "y": 80
+              "x": -339.0000000000016,
+              "y": 31.000000000000682
             },
             "size": {
               "width": 590,
-              "height": 370
+              "height": 450
             },
             "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Client Infrastructure"
+              }
+            },
             "zIndex": -1,
             "id": "e1c3ab6b-41a4-4be6-a683-afc10264c1fa",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Client Infrastructure",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -109,12 +114,12 @@
           },
           {
             "position": {
-              "x": 339,
-              "y": 251.00000000000188
+              "x": 344.9999999999998,
+              "y": 261.0000000000012
             },
             "size": {
               "width": 630,
-              "height": 340
+              "height": 200
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -127,6 +132,56 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Employee Access",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 319.9999999999993,
+              "y": 555
+            },
+            "size": {
+              "width": 680,
+              "height": 180
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "VISION Cloud Storage"
+              }
+            },
+            "id": "1ce304fb-eb83-4d01-b62a-e7624217a23d",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "VISION Cloud Storage",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -874.0000000000007,
+              "y": 80.00000000000114
+            },
+            "size": {
+              "width": 460,
+              "height": 360
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Client Cloud Infrastructure"
+              }
+            },
+            "id": "88b22692-94af-4bff-83a1-26a62cc0d6f4",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Client Cloud Infrastructure",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -227,8 +282,8 @@
           },
           {
             "position": {
-              "x": 399.9999999999998,
-              "y": 314
+              "x": 389.9999999999998,
+              "y": 615
             },
             "size": {
               "width": 120,
@@ -268,8 +323,8 @@
           },
           {
             "position": {
-              "x": 779.9999999999998,
-              "y": 289
+              "x": 589.9999999999998,
+              "y": 319
             },
             "size": {
               "width": 140,
@@ -339,8 +394,8 @@
           },
           {
             "position": {
-              "x": 563.9999999999993,
-              "y": 515
+              "x": 809.9999999999998,
+              "y": 615
             },
             "size": {
               "width": 120,
@@ -377,51 +432,6 @@
               "storesInventory": false,
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "ebc3f51d-2040-4bad-8636-1d8e813a2ca1",
-            "source": {
-              "cell": "2792fe82-fa08-40c1-916a-50030c0106bc"
-            },
-            "target": {
-              "cell": "302d3b6f-1977-4c00-a545-7763b3a48fdb"
-            },
-            "vertices": [
-              {
-                "x": 270,
-                "y": 135
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -862,6 +872,84 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "6c69c8cc-03b4-4fbf-af42-3aecd651682c",
+            "source": {
+              "cell": "212be703-af40-4e68-a2ee-f434841706cb"
+            },
+            "target": {
+              "cell": "1e13197d-c0f2-4c39-9f7f-73c5d3adba48"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "259181fd-b9d8-4f13-ae98-c0fd662c431a",
+            "source": {
+              "cell": "2792fe82-fa08-40c1-916a-50030c0106bc"
+            },
+            "target": {
+              "cell": "302d3b6f-1977-4c00-a545-7763b3a48fdb"
+            }
+          },
+          {
             "position": {
               "x": 794.9999999999998,
               "y": 80
@@ -934,7 +1022,7 @@
           },
           {
             "position": {
-              "x": -210,
+              "x": 108.24999999999972,
               "y": 314
             },
             "size": {
@@ -993,8 +1081,8 @@
           },
           {
             "position": {
-              "x": -64.00000000000068,
-              "y": 334
+              "x": -253,
+              "y": 344
             },
             "size": {
               "width": 60,
@@ -1078,7 +1166,7 @@
           },
           {
             "position": {
-              "x": 33,
+              "x": -737,
               "y": 235
             },
             "size": {
@@ -1131,8 +1219,8 @@
                 "text": "Review"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1146,11 +1234,67 @@
               "description": "Manual review of results may be needed",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "c8968434-ed51-4176-bfbf-7b9d535826f5",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Risks of unauthorized elevation of user privileges, leading to inaccurate, inconsistent, unauthorized review processes.",
+                  "mitigation": "Enforce principle of least privilege and privilege management tools.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "5"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": -144,
+              "y": 235
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Medical Imaging \nTechnology"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "212be703-af40-4e68-a2ee-f434841706cb",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Medical Imaging \nTechnology",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
               "threats": []
             }
           }
@@ -1160,6 +1304,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 6
   }
 }
