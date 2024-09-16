@@ -44,12 +44,12 @@
           },
           {
             "position": {
-              "x": -658.2500000000042,
-              "y": 31.00000000000091
+              "x": -658.2500000000043,
+              "y": 31.00000000000108
             },
             "size": {
               "width": 430,
-              "height": 490
+              "height": 390
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -69,8 +69,8 @@
           },
           {
             "position": {
-              "x": -61.249999999999716,
-              "y": 580
+              "x": -220,
+              "y": 456.00000000000034
             },
             "size": {
               "width": 190,
@@ -149,14 +149,14 @@
             "shape": "trust-boundary-box",
             "attrs": {
               "headerText": {
-                "text": "VISION Cloud Storage"
+                "text": "VISION Cloud Infrastructure"
               }
             },
             "zIndex": -1,
             "id": "1ce304fb-eb83-4d01-b62a-e7624217a23d",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "VISION Cloud Storage",
+              "name": "VISION Cloud Infrastructure",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -164,12 +164,12 @@
           },
           {
             "position": {
-              "x": -31.25000000000024,
-              "y": 31.000000000000853
+              "x": -30.000000000000455,
+              "y": 31.000000000000767
             },
             "size": {
               "width": 250,
-              "height": 360
+              "height": 180
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -189,8 +189,8 @@
           },
           {
             "position": {
-              "x": -628.2500000000036,
-              "y": 201.00000000000114
+              "x": -622.0000000000036,
+              "y": 190.0000000000017
             },
             "size": {
               "width": 112.5,
@@ -360,8 +360,8 @@
           },
           {
             "position": {
-              "x": -51.249999999999716,
-              "y": 605
+              "x": -210,
+              "y": 481.00000000000034
             },
             "size": {
               "width": 170,
@@ -515,45 +515,6 @@
             },
             "target": {
               "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "6e92a04a-8310-46a0-a21e-5fbaa482fa28",
-            "source": {
-              "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
-            },
-            "target": {
-              "cell": "3d341c4e-33d9-47e6-a2c6-c848318955cf"
             }
           },
           {
@@ -942,15 +903,15 @@
               "threats": []
             },
             "id": "f2d4e8d5-99d7-4a3a-b641-5797c9657537",
+            "labels": [
+              "Processed Data"
+            ],
             "source": {
               "cell": "31164b36-f0fa-4464-a119-154452fa19bc"
             },
             "target": {
               "cell": "1e13197d-c0f2-4c39-9f7f-73c5d3adba48"
-            },
-            "labels": [
-              "Processed Data"
-            ]
+            }
           },
           {
             "position": {
@@ -991,8 +952,8 @@
           },
           {
             "position": {
-              "x": -509.50000000000364,
-              "y": 555
+              "x": -499.5000000000043,
+              "y": 481.00000000000034
             },
             "size": {
               "width": 112.5,
@@ -1025,8 +986,8 @@
           },
           {
             "position": {
-              "x": -615.7500000000036,
-              "y": 371.00000000000114
+              "x": -609.5000000000036,
+              "y": 281.00000000000114
             },
             "size": {
               "width": 100,
@@ -1084,8 +1045,8 @@
           },
           {
             "position": {
-              "x": -351.0000000000018,
-              "y": 401.00000000000114
+              "x": -341.0000000000018,
+              "y": 301.00000000000114
             },
             "size": {
               "width": 60,
@@ -1211,7 +1172,7 @@
           {
             "position": {
               "x": -341.0000000000018,
-              "y": 201.00000000000114
+              "y": 190.0000000000017
             },
             "size": {
               "width": 60,
@@ -1219,7 +1180,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Review"
+                "text": "Review \nProcess"
               },
               "body": {
                 "stroke": "red",
@@ -1233,7 +1194,7 @@
             "id": "2f504bcd-4fac-4282-86b2-a3c21e06a118",
             "data": {
               "type": "tm.Process",
-              "name": "Review",
+              "name": "Review \nProcess",
               "description": "Manual review of results may be needed",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1298,6 +1259,43 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 63.74999999999976,
+              "y": 495
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "API"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "de25c0c8-b9e0-4143-9f20-1674786240d6",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Process",
+              "name": "API",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }
